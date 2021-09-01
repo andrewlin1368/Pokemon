@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace pokemon.Models
 {
-    interface IPokemonRepo
+    public interface IPokemonRepo
     {
     }
 }
