@@ -13,5 +13,9 @@ namespace pokemon.Models
 
         }
         public DbSet<Pokemon> Pokemon { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Pokemon>().HasKey(ba => new { ba.PokemonID});
+        }
     }
 }
