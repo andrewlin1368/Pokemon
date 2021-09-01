@@ -21,12 +21,12 @@ namespace pokemon.Models
         [Key]
         [Display(Name = "Pokemon Name")]
         [Required(ErrorMessage = "Pokemon Name is required")]
-        public int PokemonName { get; set; }
+        public string PokemonName { get; set; }
 
         [Key]
         [Display(Name = "Pokemon Gender")]
         [Required(ErrorMessage = "Pokemon Gender is required")]
-        public int PokemonGender { get; set; }
+        public string PokemonGender { get; set; }
 
     }
 }
