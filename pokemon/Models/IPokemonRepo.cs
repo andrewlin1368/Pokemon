@@ -7,5 +7,6 @@ namespace pokemon.Models
 {
     public interface IPokemonRepo
     {
+        List<Pokemon> ViewAll();
     }
 }
